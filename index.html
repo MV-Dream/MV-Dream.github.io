@@ -51,13 +51,13 @@
                     <h5 class="text-center"><a href="https://pengwangucla.github.io/peng-wang.github.io/">Peng Wang<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Jianglong Ye<sup>2*</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://jianglongye.com/">Jianglong Ye<sup>2*</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Long Mai<sup>1</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://mai-t-long.com/">Long Mai<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Kejie Li<sup>1</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://likojack.github.io/kejieli/#/home">Kejie Li<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
                     <h5 class="text-center"><a class="text-center" href="">Xiao Yang<sup>1</sup></a></h5>
@@ -119,15 +119,13 @@
             <div class="col-md-12">
                 <h2>Abstract</h2>
                 <p>
-                    We propose MVDream, a multi-view diffusion model that is able to generate multiple view and 
-                    geometrically consistent images from a given text prompt. By leveraging image diffusion models 
-                    pre-trained on large-scale web datasets and a multi-view dataset rendered from 3D assets, the 
-                    resulting multi-view diffusion models is able to achieve both the generalizability of 2D diffusion 
-                    and the consistency of 3D data. Such a model can thus be applied as a multi-view prior for 
-                    3D generation via Score Distillation Sampling, where it greatly improves the stability of 
-                    existing 2D-lifting methods by solving the 3D consistency problem. Finally, we show that the 
-                    multi-view diffusion model can also be fine-tuned under a few shot setting for personalized 
-                    3D generation, i.e. DreamBooth3D application, where the consistency can be maintained after 
+                    We propose MVDream, a multi-view diffusion model that is able to generate geometrically consistent multi-view images 
+                    from a given text prompt. By leveraging image diffusion models pre-trained on large-scale web datasets and a multi-view 
+                    dataset rendered from 3D assets, the resulting multi-view diffusion model can achieve both the generalizability of 
+                    2D diffusion and the consistency of 3D data. Such a model can thus be applied as a multi-view prior for 3D generation 
+                    via Score Distillation Sampling, where it greatly improves the stability of existing 2D-lifting methods by solving the 
+                    3D consistency problem. Finally, we show that the multi-view diffusion model can also be fine-tuned under a few shot 
+                    setting for personalized 3D generation, i.e. DreamBooth3D application, where the consistency can be maintained after 
                     learning the subject identity.
                 </p>
             </div>
@@ -137,9 +135,9 @@
         <div class="row captioned_videos">
             <div class="col-md-12">
                 <img src="static/architecture.jpg" alt="architecture" style="width: 100%">
-                <h6 class="caption" style="text-align: left";>Our multi-view diffusion model learns a joint prior over 4 different views of a subject. 
-                    We optimize the UNet during training using real 3D data. During testing (3D generation), we switch the 
-                    optimization target to 3D model and use SDS as the loss function.
+                <h6 class="caption" style="text-align: left";>Our multi-view diffusion model learns a joint prior over 4 different views. 
+                    We optimize the UNet during training using real 3D data. During testing (3D generation), it can serve as a multi-view prior for 3D 
+                    generation visa Score Distillation Sampling.
                 </h6>
             </div>
         </div>
@@ -187,8 +185,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>Example generated objects</h2>
-                <p>MVDream generates objects and scenes in a multi-view consistent way. 
-                    And generalizes to both text guided diffusion and dreambooth diffusion</p>
+                <p>MVDream generates objects and scenes in a multi-view consistent way.</p>
             </div>
         </div>
         <div class="row captioned_videos">
@@ -233,20 +230,20 @@
             <div class="col-4">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex5" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
-                        <source data-src="static/examples/mech.mp4" type="video/mp4"></source>
+                        <source data-src="static/examples/pikachu.mp4" type="video/mp4"></source>
                     </video>
                     <canvas height="752" class="videoMerge" id="ex5Merge" width="1002"></canvas>
                 </div>
-                <h6 class="caption">military Mech, future, scifi</h6>
+                <h6 class="caption">pikachu wearing a hat</h6>
             </div>
             <div class="col-4">
                 <div class="video-compare-container" style="width: 100%">
                     <video class="video lazy" id="ex9" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
-                        <source data-src="static/examples/wolfgirl.mp4" type="video/mp4"></source>
+                        <source data-src="static/examples/mohawk_boy.mp4" type="video/mp4"></source>
                     </video>
                     <canvas height="752" class="videoMerge" id="ex9Merge" width="1002"></canvas>
                 </div>
-                <h6 class="caption">girl riding wolf, cute, cartoon, blender</h6>
+                <h6 class="caption">a boy in mohawk hairstyle, head only, 4K, HD, raw</h6>
             </div>
         </div>
         <!-- <div class="row captioned_videos">
@@ -285,7 +282,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>Comparison Results</h2>
-                <p>We collected 40 prompts from different sources to compare with other text-to-3D methods.</p>
+                <p>We collected 40 prompts from different sources to compare with other text-to-3D methods. A fixed configuration is used for all prompts without hyper-paramter tuning.</p>
             </div>
         </div>
         <div class="row" style="margin-bottom: 0px;">
@@ -341,7 +338,7 @@
     <div class="container" style="max-width: 768px;">
         <div class="row">
             <div class="col-sm-3">
-                <img src="static/db_thumbnails/dog.png" alt="dog" style="width: 100%">
+                <img src="static/dreambooth/dog.png" alt="dog" style="width: 100%">
             </div>
             <div class="col-sm-9">
                 <h2>MV DreamBooth</h2>
@@ -351,13 +348,13 @@
         <div class="row captioned_videos">
             <div class="col-6">
                 <video class="video lazy" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
-                    <source data-src="static/db_examples/dog_dog.mp4" type="video/mp4"></source>
+                    <source data-src="static/dreambooth/dog_dog.mp4" type="video/mp4"></source>
                 </video>
                 <h6 class="caption">Photo of a [v] dog</h6>
             </div>
             <div class="col-6">
                 <video class="video lazy" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
-                    <source data-src="static/db_examples/dog_jumping.mp4" type="video/mp4"></source>
+                    <source data-src="static/dreambooth/dog_jumping.mp4" type="video/mp4"></source>
                 </video>
                 <h6 class="caption">Photo of a [v] dog jumping</h6>
             </div>
@@ -365,13 +362,13 @@
         <div class="row captioned_videos">
             <div class="col-6">
                 <video class="video lazy" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
-                    <source data-src="static/db_examples/dog_rainbow.mp4" type="video/mp4"></source>
+                    <source data-src="static/dreambooth/dog_rainbow.mp4" type="video/mp4"></source>
                 </video>
                 <h6 class="caption">Photo of a [v] dog sitting on a rainbow carpet</h6>
             </div>
             <div class="col-6">
                 <video class="video lazy" loop playsinline autoplay muted onplay="resizeAndPlay(this)">
-                    <source data-src="static/db_examples/dog_sleeping.mp4" type="video/mp4"></source>
+                    <source data-src="static/dreambooth/dog_sleeping.mp4" type="video/mp4"></source>
                 </video>
                 <h6 class="caption">Photo of a [v] dog sleeping</h6>
             </div>
@@ -496,14 +493,21 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Citation</h2>
-                <p>Anonymous. MVDream: Multi-view Diffusion for 3D Generation. ArXiv, 2023.<br></p><code>
+                <code>
                     @article{shi2023MVDream,<br>
-                    &nbsp; author = {Anonymous},<br>
+                    &nbsp; author = {Shi, Yichun and Wang, Peng and Ye, Jianglong and Mai, Long and Li, Kejie and Yang, Xiao},<br>
                     &nbsp; title  = {MVDream: Multi-view Diffusion for 3D Generation},<br>
                     &nbsp; joural = {ArXiv},<br>
                     &nbsp; year   = {2023},<br>
                 }</code></div>
         </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <footer>
+            <p> Website template from <a href="https://dreamfusion3d.github.io/">DreamFusion</a>. We thank the authors for the open-source code.</p>
+        </footer>
     </div>
     <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
     <script src="assets/js/yall.js"></script>
