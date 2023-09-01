@@ -14,7 +14,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>MVDreamer: Multi-view Diffusion for 3D Generation</title>
+    <title>MVDream: Multi-view Diffusion for 3D Generation</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600' rel='stylesheet' type='text/css'>
@@ -27,10 +27,10 @@
     <link rel="manifest" href="site.webmanifest">
     <meta name="robots" content="noindex">
 
-    <meta property="og:site_name" content="MVDreamer" />
+    <meta property="og:site_name" content="MVDream" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="MVDreamer: Multi-view Diffusion for 3D Generation" />
-    <meta property="og:description" content="MVDreamer: Multi-view Diffusion for 3D Generation, 2023." />
+    <meta property="og:title" content="MVDream: Multi-view Diffusion for 3D Generation" />
+    <meta property="og:description" content="MVDream: Multi-view Diffusion for 3D Generation, 2023." />
     <meta property="og:url" content="" />
 
     <script src="assets/js/video_comparison.js"></script>
@@ -40,7 +40,7 @@
 <body>
     <div class="highlight-clean" style="padding-bottom: 10px;">
         <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
-            <h1 class="text-center"><b>MVDreamer</b>: Multi-view Diffusion for 3D Generation</h1>
+            <h1 class="text-center"><b>MVDream</b>: Multi-view Diffusion for 3D Generation</h1>
         </div>
         <div class="container" style="max-width: 980px;">
             <div class="row authors">
@@ -51,13 +51,13 @@
                     <h5 class="text-center"><a href="https://pengwangucla.github.io/peng-wang.github.io/">Peng Wang<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Jianglong Ye<sup>1,2</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://jianglongye.com/">Jianglong Ye<sup>2*</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Long Mai<sup>3</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://mai-t-long.com/">Long Mai<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Kejie Li<sup>1</sup></a></h5>
+                    <h5 class="text-center"><a class="text-center" href="https://likojack.github.io/kejieli/#/home">Kejie Li<sup>1</sup></a></h5>
                 </div>
                 <div class="col">
                     <h5 class="text-center"><a class="text-center" href="">Xiao Yang<sup>1</sup></a></h5>
@@ -70,13 +70,15 @@
                 <div class="col">
                     <h6 class="text-center"><a class="text-center"><sup>2</sup>University of California San Diego</a></h6>
                 </div>
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"><sup>3</sup>Adobe</a></h6>
-                </div>
+            </div>
+        </div>
+        <div class="container" style="max-width: 300px;">
+            <div>
+                <span class="text-center">*Work done while interning at Bytedance.</span>
             </div>
         </div>
         <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
-            <a class="btn btn-light" role="button" href="">
+            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2308.16512">
                 <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
                 </svg>Paper
@@ -87,7 +89,7 @@
                 </svg>
                 Project
             </a>
-            <a class="btn btn-light" role="button" href="">
+            <a class="btn btn-light" role="button" href="https://github.com/MV-Dream/MVDream">
                 <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
                             1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 
@@ -96,7 +98,7 @@
                 </svg>
                 Code
             </a>
-            <a class="btn btn-light disabled border border-dark" aria-disabled="true" role="button" href="gallery.html">
+            <a class="btn btn-light disabled border border-dark" aria-disabled="true" role="button" href="">
                 <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px" viewBox="0 0 375 531">
                     <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
                 </svg>
@@ -111,15 +113,12 @@
             </div>    
         </div> -->
     </div>
-    
-
-
     <hr class="divider" />
     <div class="container" style="max-width: 768px;">
         <div class="row">
             <div class="col-sm-12">
                 <h2>All Testing Results ({{{start_idx}}}-{{{end_idx}}} / {{{total}}})</h2>
-                <p>We use a fixed configuration for all methods (including ours) and baselines are run with settings from threestudio. The results here are without cherry picking.</p>
+                <p>In our experiments, 40 prompts were tested for testing 3D generation capability. We use the threestudio implementation for all the baselines, where a fixed configuration is used for all methods (including ours) on all prompts. The results here are without cherry picking.</p>
             </div>
         </div>
         <div class="row" style="margin-bottom: 0px;">
@@ -133,7 +132,7 @@
                 <p>Text2Mesh-IF</p>
             </div>
             <div class="col-xs-15 compare-title">
-                <p>ProlificDreamer</p>
+                <p>ProlificDream</p>
             </div>
             <div class="col-xs-15 compare-title">
                 <p>Ours</p>
@@ -163,10 +162,17 @@
                     @article{shi2023MVDream,<br>
                     &nbsp; author = {Shi, Yichun and Wang, Peng and Ye, Jianglong and Mai, Long and Li, Kejie and Yang, Xiao},<br>
                     &nbsp; title  = {MVDream: Multi-view Diffusion for 3D Generation},<br>
-                    &nbsp; joural = {ArXiv},<br>
+                    &nbsp; joural = {arXiv:2308.16512},<br>
                     &nbsp; year   = {2023},<br>
                 }</code></div>
         </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <footer>
+            <p> Website template from <a href="https://dreamfusion3d.github.io/">DreamFusion</a>. We thank the authors for the open-source code.</p>
+        </footer>
     </div>
     <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
     <script src="assets/js/yall.js"></script>
