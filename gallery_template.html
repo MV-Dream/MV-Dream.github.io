@@ -93,7 +93,7 @@
                 </svg>
                 Code
             </a>
-            <a class="btn btn-light" role="button" href="gallery_0.html">
+            <a class="btn btn-light disabled border border-dark" aria-disabled="true" role="button" href="">
                 <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px" viewBox="0 0 375 531">
                     <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
                 </svg>
@@ -109,99 +109,24 @@
         </div> -->
     </div>
     <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
+    <div class="container" style="max-width: 1024px;">
         <div class="row">
             <div class="col-sm-12">
-                <h2>All Testing Results (11-20 / 40)</h2>
-                <p>We use the threestudio implementation for all the baselines. A fixed configuration is used for each method (including ours) without prompt-wise hyperparameter tuning. The results here are without cherry picking.</p>
+                <h2>Additional Examples ({{{start_idx}}}-{{{end_idx}}} / {{{total}}})</h2>
+                <p>Generating more results for fun here. Check <a href="./test_0.html">this page</a> for the comparison over 40 test prompts in our experiments.</p>
             </div>
         </div>
         <div class="row" style="margin-bottom: 0px;">
-            <div class="col-xs-15 compare-title  compare-title-sm">
-                <p>Dreamfusion-IF</p>
-            </div>
-            <div class="col-xs-15 compare-title">
-                <p>Magic3D-IF-SD</p>
-            </div>
-            <div class="col-xs-15 compare-title">
-                <p>Text2Mesh-IF</p>
-            </div>
-            <div class="col-xs-15 compare-title">
-                <p>ProlificDreamer</p>
-            </div>
-            <div class="col-xs-15 compare-title">
-                <p>Ours</p>
-            </div>
-        </div>
-        
-        <div class="row captioned_videos" id="res_10" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/dragon.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">Flying Dragon, highly detailed, breathing fire</p>
-        </div>
-        <div class="row captioned_videos" id="res_11" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/eagle.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A bald eagle carved out of wood</p>
-        </div>
-        <div class="row captioned_videos" id="res_12" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/fan.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">Pedestal Fan (White)</p>
-        </div>
-        <div class="row captioned_videos" id="res_13" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/frog.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">a DSLR photo of a frog wearing a sweater</p>
-        </div>
-        <div class="row captioned_videos" id="res_14" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/ghost.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">a DSLR photo of a ghost eating a hamburger</p>
-        </div>
-        <div class="row captioned_videos" id="res_15" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/girl.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">mecha vampire girl chibi</p>
-        </div>
-        <div class="row captioned_videos" id="res_16" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/gun.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A 3D scan of AK47, weapon</p>
-        </div>
-        <div class="row captioned_videos" id="res_17" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/helmet.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">Darth Vader helmet,g highly detailed</p>
-        </div>
-        <div class="row captioned_videos" id="res_18" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/horse.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A photo of a horse walking</p>
-        </div>
-        <div class="row captioned_videos" id="res_19" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/merged_results/house.mp4" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">Fisherman House, cute, cartoon, blender, stylized</p>
+            {{{content}}}
         </div>
         <div class="row" style="margin-bottom: 0px;">
             <div class="col-sm-3" style="margin-left:auto">
-                <a href="test_0.html" class="btn btn-primary btn-lg ">
+                <a href="{{{link1}}}" class="btn btn-primary btn-lg {{{active1}}}">
                     Previous Page
                 </a>
             </div>
             <div class="col-sm-3" style="margin-right:auto">
-                <a href="test_2.html" class="btn btn-primary btn-lg ">
+                <a href="{{{link2}}}" class="btn btn-primary btn-lg {{{active2}}}">
                     Next Page
                 </a>
             </div>
@@ -209,7 +134,7 @@
     </div>
 
     <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
+    <div class="container" style="max-width: 1024px;">
         <div class="row">
             <div class="col-md-12">
                 <h2>Citation</h2>
@@ -224,7 +149,7 @@
     </div>
 
     <hr class="divider" />
-    <div class="container" style="max-width: 768px;">
+    <div class="container" style="max-width: 1024px;">
         <footer>
             <p> Website template from <a href="https://dreamfusion3d.github.io/">DreamFusion</a>. We thank the authors for the open-source code.</p>
         </footer>
