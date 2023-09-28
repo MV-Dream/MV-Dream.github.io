@@ -1,0 +1,24 @@
+dog:
+  umbrella: "wearing a green umbrella"
+  cosplay: "dress as a superman"
+  stone: "as Stone statue"
+dog2: 
+  umbrella: "wearing a green umbrella"
+  warrior_pc_recog: "as a warrior, dramatic light"
+  stone_pc_recog: "as Stone statue"
+dog3:
+  umbrella: "wearing a green umbrella"
+  witch_pc_recog: " as a magic witch, mystic lights"
+  sleeping: "sleeping on a ground"
+cat:
+  v_pc_recog: "a photo of [v] cat"
+  rainbow_pc_recog: "sitting on a purple carpet"
+  sleeping_pc_recog: "sleeping on a ground"
+dog5:
+  dog_pc_recog: "a photo of [v] dog"
+  purple: "sitting on a purple carpet"
+  stone: "as Stone statue"
+dog6:
+  cosplay: "a photo of [v] dog"
+  purple: "sitting on a purple carpet"
+  jumping_pc_recog: "jumping with paint on body"
