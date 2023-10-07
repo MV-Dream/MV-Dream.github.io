@@ -114,14 +114,7 @@
             <div class="col-md-12">
                 <h2>Abstract</h2>
                 <p>
-                    We propose MVDream, a multi-view diffusion model that is able to generate geometrically consistent multi-view images 
-                    from a given text prompt. By leveraging image diffusion models pre-trained on large-scale web datasets and a multi-view 
-                    dataset rendered from 3D assets, the resulting multi-view diffusion model can achieve both the generalizability of 
-                    2D diffusion and the consistency of 3D data. Such a model can thus be applied as a multi-view prior for 3D generation 
-                    via Score Distillation Sampling, where it greatly improves the stability of existing 2D-lifting methods by solving the 
-                    3D consistency problem. Finally, we show that the multi-view diffusion model can also be fine-tuned under a few shot 
-                    setting for personalized 3D generation, i.e. DreamBooth3D application, where the consistency can be maintained after 
-                    learning the subject identity.
+                    We introduce MVDream, a multi-view diffusion model that is able to generate consistent multi-view images from a given text prompt. Learning from both 2D and 3D data, a multi-view diffusion model can achieve the generalizability of 2D diffusion models and the consistency of 3D renderings. We demonstrate that such a multi-view prior can serve as a generalizable 3D prior that is agnostic to 3D representations. It can be applied to 3D generation via Score Distillation Sampling, significantly enhancing the consistency and stability of existing 2D-lifting methods. It can also learn new concepts from a few 2D examples, akin to DreamBooth, but for 3D generation.
                 </p>
             </div>
         </div>
